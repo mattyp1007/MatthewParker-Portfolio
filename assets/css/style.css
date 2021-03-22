@@ -7,30 +7,52 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
     color: whitesmoke;
     background-color: dimgray;
 }
-
-header h1 {
-    display: inline-block;
-    font-size: 5.5rem;
-    font-weight: 700;
-    padding: 0.8rem 1.5rem 0.8rem 6.0rem;
-    margin: 1.0rem 1.0rem 1.0rem 0.0rem;
+.name {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: powderblue;
+}
+.name h1 {
+    /* display: inline-block; */
+    
+    font-size: 4.0rem;
+    font-weight: 700;
+    padding: 0.4rem 1.5rem 0.4rem 6.0rem;
+    margin: 1.0rem 1.0rem 1.0rem 0.0rem;
     color: dimgray;
 
 }
 
-header nav {
-    float: right;
-    
+nav {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: right;
+    width: 35%;
+    margin-left: 10rem;
+    margin-right: 4rem;
+    font-weight: 600;
+    /* padding: 0rem 3rem 0rem 0rem; */
 }
-header nav ul {
-    padding: 3rem 8rem 3rem 0rem;
+
+nav a {
+    color: powderblue;
+    /* margin-left: 2.0rem; */
+    text-align: center;
 }
-header nav ul li{
-    font-size: 2.4rem;
-    display: inline-block;
-    margin-left: 2.0rem;
+
+@media screen and (max-width: 768px) {
+    header,
+    nav {
+        flex-direction: column;
+    }
 }
