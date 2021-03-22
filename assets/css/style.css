@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: space-between;
     align-items: center;
     color: whitesmoke;
     background-color: dimgray;
@@ -33,26 +33,35 @@ header {
 }
 
 nav {
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: right;
-    width: 35%;
-    margin-left: 10rem;
-    margin-right: 4rem;
+    font-size: 1.6rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    float: right;
+    /* width: 35%; */
+    /* margin-left: 10rem; */
+    /* margin-right: 4rem; */
     font-weight: 600;
-    /* padding: 0rem 3rem 0rem 0rem; */
+    padding: 0rem 1.5rem 0rem 0rem;
 }
 
 nav a {
     color: powderblue;
-    /* margin-left: 2.0rem; */
+    margin-left: 2.0rem;
     text-align: center;
+    padding-bottom: 1.0rem;
+    border-bottom: 4px solid powderblue;
+    text-decoration: none;
+    /* text-underline-offset: 1.0rem; */
 }
 
 @media screen and (max-width: 768px) {
-    header,
-    nav {
+    header {
         flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+    nav a {
+        display: block;
+        padding-bottom: 2rem;
+        border-style: none;
     }
 }
