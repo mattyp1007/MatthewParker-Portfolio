@@ -48,6 +48,26 @@ nav a {
     text-decoration: none;
 }
 
+.subheader {
+    position:relative;
+}
+
+.subimg {
+    width: 100%;
+    /* height: auto; */
+    max-height: 10%;
+    
+
+}
+
+.subtitle {
+    background-color: powderblue;
+    color: dimgray;
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1.6rem;
+}
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
