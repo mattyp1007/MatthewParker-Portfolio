@@ -1,2 +1,8 @@
 # MatthewParker-Portfolio
-A webpage for my coding portfolio.
+
+## Live Link
+https://mattyp1007.github.io/MatthewParker-Portfolio/
+
+## Screenshot
+
+## Description

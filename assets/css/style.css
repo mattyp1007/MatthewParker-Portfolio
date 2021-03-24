@@ -1,3 +1,4 @@
+/* do this so conversion is 1rem = 10px */
 html {
     font-size: 62.5%;
 }
@@ -21,6 +22,7 @@ p {
     margin-bottom: 1rem;
 }
 
+/* header */
 .name {
     margin: 2rem 0rem;
     display: flex;
@@ -28,17 +30,17 @@ p {
     align-items: center;
     background-color: powderblue;
 }
+
+/* my name text */
 .name h1 {
-    /* display: inline-block; */
-    
     font-size: 4.0rem;
     font-weight: 700;
     padding: 0.4rem 1.5rem 0.4rem 6.0rem;
     margin: 1.0rem 0.0rem 1.0rem 0.0rem;
     color: dimgray;
-
 }
 
+/* nav bar */
 nav {
     font-size: 1.6rem;
     float: right;
@@ -46,6 +48,7 @@ nav {
     padding: 0rem 1.5rem 0rem 0rem;
 }
 
+/* nav link */
 nav a {
     color: powderblue;
     margin-left: 2.0rem;
@@ -56,7 +59,7 @@ nav a {
 }
 
 /*********************************************************/
-/* TODO: make cover image look nicer */
+/* cover image */
 .subheader {
     height: 25rem;
     background-image: url('../images/subheader2.png');
@@ -67,10 +70,10 @@ nav a {
     position: relative;
 }
 
+/* text on cover image */
 .subtitle {
     font-size: 2.8rem;
     background-color: powderblue;
-    
     color: dimgray;
     position: absolute;
     bottom: 0.8rem;
@@ -78,35 +81,27 @@ nav a {
     padding: 1.0rem 1.6rem 1.0rem 1.6rem;
 }
 
+/* Top-level structure of the main section */
 /*********************************************************/
 main {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    /* margin-left: 10rem; */
-
 }
-
 
 section  {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /* align-items: center; */
     margin-bottom: 3rem;
-    
-    
 }
 
-/* TODO: fix titles to be less wide so words wrap */
 .title {
     flex: 0 0 auto;
     border-right: 3px solid rgb(2, 2, 46);
     padding-right: 4rem;
     padding-left: 7rem;
-    /* width: 40%; */
     width: 22rem;
-    /* max-width: 40rem; */
     font-size: 5.2rem;
     color: rgb(54, 54, 112);
     text-align: right;
@@ -117,27 +112,30 @@ section  {
     padding-left: 4rem;
     margin-right: 5rem;
     width: 60%;
-    /* width: 60%; */
-    /* flex: 0 1 auto; */
-    
 }
 
+/* Work content section */
 /*********************************************************/
 #work .content {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Main Project */
+.work1 {
+    width: 100%;
+    height: 60%;
+}
+
+/* Main Project image */
 .work1 img {
     display:block;
     object-fit: cover;
     height: 50rem;
     width: 80rem;
 }
-.work1 {
-    width: 100%;
-    height: 60%;
-}
 
+/* Main Project caption */
 .work1 .caption {
     position: relative;
     margin: -8rem 50rem 6rem 0rem;
@@ -147,27 +145,25 @@ section  {
     background-color: powderblue;
 }
 
+/* all other projects' images */
 figure img {
-    /* position: relative; */
     margin-right: 5rem;
     height: 10rem;
     width: 37.2rem;
-    
-}
-figure img {
     border:powderblue 4px solid;
 }
 
-
+/* figure caption big text */
 h4 {
     padding-bottom: 0.6rem;
     font-size: 2.4rem;
     
 }
+
+/* Contact Me content section */
 /*********************************************************/
 #contactme .content {
     display: flex;
-    
 }
 
 #contactme ul {
@@ -183,7 +179,7 @@ h4 {
     margin-left: 8rem;
 }
 
-
+/* Responsive design adjustments */
 /*********************************************************/
 
 @media screen and (max-width: 768px) {
@@ -195,40 +191,37 @@ h4 {
     .name {
         margin-top: 0rem;
     }
+
     .name h1 {
         /* margin-left: 0rem; */
         /* justify-content:space-around; */
         padding-left: 1.5rem;
         padding-top: 1.5rem;
     }
+
     nav a {
         display: block;
         padding-bottom: 2rem;
         border-style: none;
     }
+
     .subheader {
         height: 15rem;
     }
 
     section {
         flex-direction: column;
-        /* justify-content: flex-start; */
         align-items:flex-start;
-        
-        
     }
 
     .title {
         text-align: left;
-        /* padding: 1.6rem; */
-        /* margin-left: 1.6rem; */
         margin: 0 0 0 1.6rem;
         padding: 0;
         width: 90%;
         line-height: 6.8rem;
         border-right: none;
         border-bottom: 3px solid rgb(2, 2, 46);
-
     }
 
     .content {
@@ -236,9 +229,3 @@ h4 {
         width: 90%;
     }
 }
-
-/* @media screen and (max-width: 1072px) {
-    main {
-        margin-left: 1rem;
-    }
-} */
