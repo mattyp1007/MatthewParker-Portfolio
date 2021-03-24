@@ -90,27 +90,32 @@ main {
 section  {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: flex-start;
+    /* align-items: center; */
     margin-bottom: 3rem;
     
     
 }
+
+/* TODO: fix titles to be less wide so words wrap */
 .title {
-    /* flex: 1 1 auto; */
+    flex: 0 0 auto;
     border-right: 3px solid rgb(2, 2, 46);
     padding-right: 4rem;
-    margin-left: 13%;
+    padding-left: 7rem;
+    /* width: 40%; */
     width: 22rem;
-    /* max-width: 22.2rem; */
+    /* max-width: 40rem; */
     font-size: 5.2rem;
     color: rgb(54, 54, 112);
     text-align: right;
 }
 
-section .content {
+.content {
+    flex: 3 0 auto;
     padding-left: 4rem;
     margin-right: 5rem;
+    width: 60%;
     /* width: 60%; */
     /* flex: 0 1 auto; */
     
@@ -143,14 +148,28 @@ section .content {
 
     section {
         flex-direction: column;
-        align-items: center;
+        /* justify-content: flex-start; */
+        align-items:flex-start;
+        
         
     }
 
     .title {
+        text-align: left;
+        /* padding: 1.6rem; */
+        /* margin-left: 1.6rem; */
+        margin: 0 0 0 1.6rem;
+        padding: 0;
+        width: 90%;
+        line-height: 6.8rem;
         border-right: none;
         border-bottom: 3px solid rgb(2, 2, 46);
 
+    }
+
+    .content {
+        padding: 1.6rem;
+        width: 90%;
     }
 }
 
