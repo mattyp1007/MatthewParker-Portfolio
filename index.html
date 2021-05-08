@@ -2,104 +2,168 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>My Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="name"><h1>Matthew Parker</h1></div>
-        <nav>
-            <a href="#aboutme">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contactme">Contact Me</a>
-            <a href="#resume">Resume</a>
-        </nav>
-    </header>
-    
-    <section class="subheader">
-        <h2 class="subtitle">My Coding Portfolio</h2>   
+  <header>
+    <div class="name">
+      <h1>Matthew Parker</h1>
+    </div>
+    <nav>
+      <a href="#aboutme">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contactme">Contact Me</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <section class="subheader">
+    <h2 class="subtitle">My Coding Portfolio</h2>
+  </section>
+
+  <main class="container-fluid">
+    <section id="aboutme" class="row mb-5">
+      <h3 class="title col-sm-3">About Me</h3>
+      <div class="content col-sm-9">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam ullam minima voluptate aliquid!
+          Provident numquam beatae cupiditate voluptates soluta corrupti ullam quaerat, officiis accusantium rem ipsum
+          iusto mollitia fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Illum unde aperiam voluptatum fugit totam dolorem odit consequatur numquam impedit. Architecto vero suscipit
+          nostrum consectetur magni dicta quaerat, nam dolore beatae?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde repellendus, porro error veniam numquam
+          suscipit nostrum et, quidem, consequatur neque rerum tempora provident pariatur fuga! Quam magnam sit quasi.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ducimus tenetur magni dicta reprehenderit
+          animi doloribus perspiciatis quod deleniti facilis, a atque quidem fuga vero unde vitae natus. Molestiae,
+          repellat.</p>
+      </div>
+    </section>
+    <section class="row mb-5" id="work">
+      <h3 class="title col-sm-3">Work</h3>
+      <div class="col-sm-9">
+        <div class="work1 row">
+
+          <!-- 1.) XP Arcade -->
+          <a class="col-6 top-item" href="https://xp-arcade.herokuapp.com/">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/xp.jpg">
+              <div class="card-body">
+                <h4 class="card-title">XP Arcade</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+          <!-- 2.) Weather -->
+          <a class="col-6 top-item" href="https://mattyp1007.github.io/the-weather-seer/">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/weather.jpg">
+
+
+              <div class="card-body">
+                <h4 class="card-title">The Weather Seer</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="row">
+
+          <!-- 3.) Blog -->
+          <a class="col-4" href="https://mighty-wildwood-47382.herokuapp.com/">
+            <div class=" card">
+              <img class="card-img-top" src="assets/images/blog.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Tech Yourself Blog</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+          <!-- 4.) Planner -->
+          <a class="col-4" href="https://mattyp1007.github.io/work-day-planner-hw5/">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/planner.jpg">
+
+              <div class="card-body">
+                <h4 class="card-title">Workday Planner</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5.) Employee tracker -->
+          <a class="col-4" href="https://github.com/mattyp1007/employee-tracker-mysql">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/employee.jpg">
+
+              <div class="card-body">
+                <h4 class="card-title">Employee Tracker</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="row">
+
+          <!-- 6.) Quiz game -->
+          <a class="col-4" href="https://github.com/mattyp1007/super-cool-quiz-game">
+            <div class=" card">
+              <img class="card-img-top" src="assets/images/quiz.png">
+              <div class="card-body">
+                <h4 class="card-title">Quiz Game</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+          <!-- 7.) Password generator -->
+          <a class="col-4" href="https://github.com/mattyp1007/Random-Password-Generator">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/password.jpg">
+
+              <div class="card-body">
+                <h4 class="card-title">Random Password Generator</h4>
+                <h5 class="card-subtitle">JavaScript/HTML/CSS</h5>
+              </div>
+            </div>
+          </a>
+
+          <!-- 8.) Travel Mentor -->
+          <a class="col-4" href="https://github.com/mattyp1007/employee-tracker-mysql">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/travel.png">
+
+              <div class="card-body">
+                <h4 class="card-title">Travel Mentor</h4>
+                <h5 class="card-subtitle">Team Project</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <main>
-        <section id="aboutme">
-            <h3 class="title">About Me</h3>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam ullam minima voluptate aliquid! Provident numquam beatae cupiditate voluptates soluta corrupti ullam quaerat, officiis accusantium rem ipsum iusto mollitia fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Illum unde aperiam voluptatum fugit totam dolorem odit consequatur numquam impedit. Architecto vero suscipit nostrum consectetur magni dicta quaerat, nam dolore beatae?
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde repellendus, porro error veniam numquam suscipit nostrum et, quidem, consequatur neque rerum tempora provident pariatur fuga! Quam magnam sit quasi.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ducimus tenetur magni dicta reprehenderit animi doloribus perspiciatis quod deleniti facilis, a atque quidem fuga vero unde vitae natus. Molestiae, repellat.</p>
-            </div>
-        </section>
-        <section id="work">
-            <h3 class="title">Work</h3>
-            <div class="content">
-                <figure class="work1">
-                    <a href="https://mattyp1007.github.io/the-weather-seer/">
-                        <img src="assets/images/solid-color-image.jpeg">
-                    </a>
-                    <div class="caption">
-                        <h4>The Weather Seer</h4>
-                        <h5>JavaScript/HTML/CSS</h5>
-                    </div>
-                </figure> 
-                <figure class="work2">
-                    <a href="https://mattyp1007.github.io/work-day-planner-hw5/">
-                        <img src="assets/images/solid-color-image(1).jpeg">
-                    </a>
-                    <div class="caption">
-                        <h4>Workday Planner</h4>
-                        <h5>JavaScript/HTML/CSS</h5>
-                    </div>
-                </figure>
-                <figure class="work3">
-                    <a href="https://github.com/mattyp1007/super-cool-quiz-game">
-                        <img src="assets/images/solid-color-image(2).jpeg">
-                    </a>
-                    <div class="caption">
-                        <h4>Quiz Game</h4>
-                        <h5>JavaScript/HTML/CSS</h5>
-                    </div>
-                </figure>
-                <figure class="work4">
-                    <a href="https://github.com/mattyp1007/Random-Password-Generator">
-                        <img src="assets/images/solid-color-image(3).jpeg">
-                    </a>
-                    <div class="caption">
-                        <h4>Random Password Generator</h4>
-                        <h5>JavaScript/HTML/CSS</h5>
-                    </div>
-                </figure>
-                <figure class="work5">
-                    <a href="https://github.com/mattyp1007">
-                        <img src="assets/images/solid-color-image(4).jpeg">
-                    </a>
-                    <div class="caption">
-                        <h4>Travel Mentor</h4>
-                        <h5>Team Project</h5>
-                    </div>
-                </figure>
-            </div>
-        </section>
-        <section id="contactme">
-            <h3 class="title">Contact Me</h3>
-            <div class="content">
-                <!-- TODO: make contact links in a row -->
-                
-                <ul>
-                    <li>555.555.5555</li>
-                    <li>fake.email@wahoo.com</li>
-                    <li><a href="https://github.com/mattyp1007">GitHub</a></li>
-                    <li>LinkedIn</li>
-                </ul>
-            </div>
-        </section>
-        
+    <section id="contactme" class="row mb-5">
+      <h3 class="title col-3">Contact Me</h3>
+      <div class="content col-9">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">555.555.5555</li>
+          <li class="list-group-item">fake.email@wahoo.com</li>
+          <li class="list-group-item"><a href="https://github.com/mattyp1007">GitHub</a></li>
+          <li class="list-group-item">LinkedIn</li>
+        </ul>
+      </div>
+    </section>
 
-    </main>
+
+  </main>
 </body>
